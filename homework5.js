@@ -1,10 +1,9 @@
 // ДЗ 7.1. Робота з обьектом
-// Створюємо об'єкт з трьома властивостями
-const obj = {
+const human = {
   name: "Leon",
   age: 37,
   profession: "Qa-Engineer",
-  // Метод для виведення всіх властивостей об'єкта
+
   getInfo: function () {
     for (let key in this) {
       if (this.hasOwnProperty(key) && typeof this[key] !== "function") {
@@ -13,13 +12,11 @@ const obj = {
     }
   },
 };
-// Виклик методу getInfo
-obj.getInfo();
-
+human.getInfo();
 // Додаємо нову властивість
-obj.newProperty = "New name";
+human.newProperty = "New name";
 // Знову викликаємо метод getInfo
-obj.getInfo();
+human.getInfo();
 
 // ДЗ 7.2. Сума вартості послуг
 var services = {
